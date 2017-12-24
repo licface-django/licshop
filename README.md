@@ -1,0 +1,2 @@
+# licshop
+Django Based
