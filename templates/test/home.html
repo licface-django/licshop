@@ -1,0 +1,30 @@
+{% extends base %}
+
+{% block body %}
+    {% block center %}
+        <form action="{% if action %}{{action}}{% else %}/home/{% endif %}" method="post">
+            {% csrf_token %}
+            {{ form }}
+            {% if action and 'upload' in action %}
+                <input type="submit" value="Upload" />
+            {% else %}
+                <input type="submit" value="Search" />
+            {% endif %}
+            {% if data %}
+                <center>
+                    <h4>Your Search is</h4>
+                    <h1> {{ data }} </h1>
+                </center>
+            {% endif %}
+        </form>
+        <br/><br/><br/>
+        <center>
+            <h1>data = {{ isAlive }}</h1>
+            {% if isAlive %}
+            <h1>PING = True</h1>
+            {% else %}
+            <h1>PING = False</h1>
+            {% endif %}
+        </center>
+    {% endblock %}
+{% endblock %}

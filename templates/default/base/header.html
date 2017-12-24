@@ -1,0 +1,151 @@
+{% block html %}
+<html lang="en-US">
+{% endblock %}
+
+{% block head %}
+<head>
+<meta class="foundation-mq-small">
+<meta class="foundation-mq-small-only">
+<meta class="foundation-mq-medium">
+<meta class="foundation-mq-medium-only">
+<meta class="foundation-mq-large">
+<meta class="foundation-mq-large-only">
+<meta class="foundation-mq-xlarge">
+<meta class="foundation-mq-xlarge-only">
+<meta class="foundation-mq-xxlarge">
+<meta class="foundation-data-attribute-namespace">
+<!--<base href="https://www.mp3link.info/">-->
+<link type="image/x-icon" href="{{media_url}}images/favicon.ico?v=2" rel="icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta content="MP3Link: Smart mp3 Searcher" property="og:title">
+<meta content="MP3Link" property="og:site_name">
+<meta content="Free download mp3 with smart" name="description">
+<meta content="Easy and Smart download mp3 for free" property="og:description">
+<meta content="mp3, download mp3, smart download, smart download mp3, easy, easy download mp3, easy mp3 download, smart, smart mp3 download, mp3 downloader, easy mp3 downloader, smart mp3 downloader" name="keywords">
+<link href="https://www.mp3link.info/" rel="canonical">
+<meta content="https://www.mp3link.info/" p perty="og:url">
+<meta content="{{media_url}}images/social_ad.png" property="og:image">
+<meta content="image/png" property="og:image:type">
+<meta content="393" property="og:image:width">
+<meta content="393" property="og:image:height">
+<meta content="#ffffff" name="theme-color">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="@seedrcoil" name="twitter:site">
+<meta content="Easy and Smart mp3 download" name="twitter:title">
+<meta content="Easy and Smart download mp3 for free" name="twitter:description">
+<meta content="@mp3link_info" name="twitter:creator">
+<meta content="{{media_url}}images/social_ad.png" name="twitter:image">
+<meta content="mp3link.info" name="twitter:domain">
+<meta content="www.mp3link.info" name="twitter:url">
+<meta content="index, follow" name="robots">
+
+{% if title %}
+    <title>{{ title }}</title>
+{% else %}
+    <title>MP3Link</title>
+{% endif %}
+
+<!-- Stylesheets -->
+{% include style %}
+
+<link rel='stylesheet' id='icons-css'  href='{{static_url}}css/icons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-css'  href='{{static_url}}css/animate.css' type='text/css' media='all' />
+<link rel='stylesheet' id='shortcodes_front-css'  href='{{static_url}}css/shortcodes.css?ver=4.3.2' type='text/css' media='all' /> 
+<link rel='stylesheet' id='revslider-css'  href='{{static_url}}css/settings.css' type='text/css' media='all' />
+
+<!-- Responsive CSS -->
+<link rel='stylesheet' id='responsive-css'  href='{{static_url}}css/responsive.css' type='text/css' media='all' />
+
+<!-- Custom CSS -->
+{% include custom_css %}
+
+<!-- <link href="{{static_url}}bootstrap/css/bootstrap.css" rel='stylesheet'>
+<link href="{{static_url}}bootstrap/css/bootstrap.theme.css" rel='stylesheet'> -->
+
+{% if isAlive %}
+    <link href="https://static.seedr.cc/css/fontawesome450/css/font-awesome.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700">
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/r20171031153338/recaptcha__en.js"></script>
+
+{% endif %}
+<meta content="08314ba7305fc346aa7d48dea2f25d08" name="p:domain_verify">
+<meta class="foundation-mq-topbar">
+<script type="text/javascript" async="" src="{{static_url}}jquery/js/jquery-3.2.1.js"></script>
+</head>
+{% endblock %}
+
+{% block body %}
+    
+    {% block body_contents %}
+        
+        {% block header %}
+            {% block extrabox %}
+                
+                {% block singup %}
+                {% endblock %}
+
+                {% block singin %}
+                {% endblock %}
+
+            {% endblock %}
+
+            {% block header_logo %}
+            {% endblock %}
+
+            {% block menu%}
+            {% endblock %}
+
+        {% endblock %}
+
+        {% block contents %}
+
+            {% block search %}
+
+                {% block search_contents %}
+                {% endblock %}
+
+                {% block form_search_start %}
+
+                    {% block form_search %}
+                    {% endblock %}
+
+                {% endblock %}
+
+            {% endblock %}
+
+            {% block album %}
+                
+                {% block listen_now %}
+                {% endblock %}
+
+                {% block latest_album %}
+                {% endblock %}
+
+            {% endblock %}
+
+            {% block tags %}
+
+                {% block tags_contents %}
+                {% endblock %}
+            {% endblock %}
+
+        {% endblock %}
+
+        {% block footer %}
+        {% endblock %}
+
+    {% endblock %}
+
+    {% block back_to_top %}
+    {% endblock %}
+
+    {% block footer_scripts %}
+    {% endblock %}
+
+{% endblock %}
+
+{% block endhtml %}
+{% endblock %}

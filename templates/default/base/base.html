@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+{% extends header %}
+ 
+	<!-- Google Fonts -->
+	{% if isAlive %}
+     	<link href='http://fonts.googleapis.com/css?family=Oswald:400,400italic,700,700italic|Oswald:400,400italic,700,700italic|Oswald:400,400italic,700,700italic|Oswald:400,400italic,700,700italic|Oswald:400,400italic,700,700italic|Oswald:400,400italic,700,700italic|Oswald:400,400italic,700,700italic&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese' rel='stylesheet' type='text/css'>  	
+		<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Oswald%3A300%2Cregular%2C700&#038;ver=3.9.2' type='text/css' media='all' />
+	{% endif %}
+
+
+{% block body %}
+<body class="home page tt_responsive">
+	{% block body_contents %}
+	<div id="home" >
+			
+			<div id="layout" class="boxed-margin dark">    
+				{% block header %}
+				<header id="header" class="header_v4">
+					{% block extrabox %}
+					<div class="extrabox">
+						
+						<div class="row clearfix">
+							
+							<div class="extra-content">
+           						{% block singup %}
+								<div id="text-4" class="ep_widget widget_text grid_6">
+									<h3 class="col-title">SingUp</h3>
+									<span class="liner"></span>			
+									
+									<div class="textwidget">
+										
+										<div class="ttcf7" lang="en-US" dir="ltr">
+											
+											<div class="screen-reader-response"></div>
+											
+											<form name="contactform" id="contactform" action="contact.php" method="post" class="ttcf7-form" novalidate="novalidate">
+												
+												<div class="custom-ds"></div>
+												
+												<p>Username (required)<br />
+													<span class="ttcf7-form-control-wrap your-name">
+													<input type="text" name="your-name" id="your-name" value="" size="40" class="ttcf7-form-control ttcf7-text ttcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> 
+												</p>
+
+												<p>Password (required)<br />
+													<span class="ttcf7-form-control-wrap your-name">
+													<input type="password" name="your-pass" id="your-pass" value="" size="40" class="ttcf7-form-control ttcf7-text ttcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> 
+												</p>
+												
+												<p>Your Email (required)<br />
+													<span class="ttcf7-form-control-wrap your-email">
+													<input type="email" name="your-email" id="your-email" value="" size="40" class="ttcf7-form-control ttcf7-text ttcf7-email ttcf7-validates-as-required ttcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span> 
+												</p>
+												
+												<p>First Name<br />
+													<span class="ttcf7-form-control-wrap your-subject">
+													<input type="text" name="your-first-name" id="your-first-name" value="" size="40" class="ttcf7-form-control ttcf7-text" aria-invalid="false" /></span> 
+												</p>
+												
+												<p class="username">Last Name<br />
+													<span class="ttcf7-form-control-wrap your-subject">
+													<input type="text" name="your-last-name" id="your-last-name" value="" size="40" class="ttcf7-form-control ttcf7-text" aria-invalid="false" /></span> 
+												</p>
+
+												<p>
+													<div>
+														<img src="{{media_url}}images/profile/topi4.png" 	width="50%" />
+													</div>
+												</p>
+
+												<p><input type="submit" value="Send" class="ttcf7-form-control ttcf7-submit" /></p>
+												
+												<div class="ttcf7-response-output ttcf7-display-none"></div>
+											</form>
+										
+										</div>
+									
+									</div>
+								
+								</div>
+								{% endblock %} <!-- block singup -->
+
+								{% block singin %}
+								<div id="text-4" class="ep_widget widget_text grid_6">
+									<h3 class="col-title">SingIn</h3>
+									<span class="liner"></span>			
+									
+									<div class="textwidget">
+										
+										<div class="ttcf7" lang="en-US" dir="ltr">
+											
+											<div class="screen-reader-response"></div>
+											
+											<form name="contactform" id="contactform" action="contact.php" method="post" class="ttcf7-form" novalidate="novalidate">
+												
+												<div class="custom-ds"></div>
+												
+												<p>Username (required)<br />
+													<span class="ttcf7-form-control-wrap your-name">
+													<input type="text" name="your-name" id="your-name" value="" size="40" class="ttcf7-form-control ttcf7-text ttcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> 
+												</p>												
+												<p>Password (required)<br />
+													<span class="ttcf7-form-control-wrap your-name">
+													<input type="password" name="your-pass" id="your-pass" value="" size="40" class="ttcf7-form-control ttcf7-text ttcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> 
+												</p>
+												
+												<p>Your Email (required)<br />
+													<span class="ttcf7-form-control-wrap your-email">
+													<input type="email" name="your-email" id="your-email" value="" size="40" class="ttcf7-form-control ttcf7-text ttcf7-email ttcf7-validates-as-required ttcf7-validates-as-email" aria-required="true" aria-invalid="false" /></span> 
+												</p>
+												
+												<p>First Name<br />
+													<span class="ttcf7-form-control-wrap your-subject">
+													<input type="text" name="your-first-name" id="your-first-name" value="" size="40" class="ttcf7-form-control ttcf7-text" aria-invalid="false" /></span> 
+												</p>
+												
+												<p>Last Name<br />
+													<span class="ttcf7-form-control-wrap your-subject">
+													<input type="text" name="your-last-name" id="your-last-name" value="" size="40" class="ttcf7-form-control ttcf7-text" aria-invalid="false" /></span> 
+												</p>
+												
+												<!-- <p>Your Message<br />
+													<span class="ttcf7-form-control-wrap your-message">
+													<textarea name="your-message" id="your-message" cols="40" rows="10" class="ttcf7-form-control ttcf7-textarea" aria-invalid="false"></textarea></span> </p>
+												 -->
+												<p><input type="submit" value="Send" class="ttcf7-form-control ttcf7-submit" /></p>
+												
+												<div class="ttcf7-response-output ttcf7-display-none"></div>
+											</form>
+										
+										</div>
+									
+									</div>
+								
+								</div>       
+								{% endblock %} <!-- block singin -->
+							</div><!-- extra content -->
+
+							<div class="arrow-down arrow-center"><i class="icon-angle-down"></i></div><!-- arrow down -->
+						
+						</div><!-- end row -->
+					
+					</div><!-- end extrabox -->			            
+					{% endblock %} <!-- block extrabox -->
+
+            	{% block header_logo %}
+				<div class="head">
+					
+					<div class="row clearfix">
+						
+						<div class="logo">
+							<a href="index.html"><img src="{{media_url}}images/logo.png" alt="Official" /></a>
+						</div><!-- end logo -->
+						
+					</div><!-- row -->
+				
+				</div><!-- head -->
+				{% endblock %} <!-- block header_logo -->
+
+				{% block menu %}
+
+				<div class="headdown my_sticky">
+					
+					<div class="row clearfix">
+					
+						<!-- Menu -->
+						<nav class="main">
+							<ul id="menu-main" class="sf-menu">
+								<li class="menu-item current-menu-item selectedLava"><a href="index.html">Home</a>
+								</li>
+								<li class="menu-item"><a href="shop.html">Album</a>
+									<ul class="sub-menu">
+									</ul>
+								</li>
+								<li class="menu-item"><a href="#">Latest Download</a>
+									<ul class="sub-menu">
+										<li class="menu-item"><a href="about-us.html">MP3</a></li>
+										<li class="menu-item"><a href="services.html">Albums</a></li>
+									</ul>
+								</li>
+								<li class="submenu_4col menu-item"><a href="#">Download</a>
+									<ul class="sub-menu">
+										<li class="menu-item"><a href="accordion.html"><i class="icon-align-justify icon-xs"></i>Your Download</a></li>
+										<li class="menu-item"><a href="action-box.html"><i class="icon-bullhorn icon-xs"></i>Most Download</a></li>
+										<li class="menu-item"><a href="button.html"><i class="icon-hand-up icon-xs"></i>Generator</a></li>
+									</ul>
+								</li>								
+								<li class="menu-item"><a href="contact.html">SingUp</a>
+									<ul class="sub-menu">
+										<li class="menu-item">With SingUp you can download over than 10 times</li>
+									</ul>
+								</li>
+								<li class="menu-item"><a href="contact.html">SingIn</a>
+								</li>
+							</ul>
+							
+						</nav><!-- /Menu -->
+						
+					</div><!-- row -->
+				
+				</div><!-- headdown -->
+				{% endblock %} <!-- block menu -->
+				</header><!-- end header -->
+			    {% endblock %} <!-- block header -->
+
+			{% block contents %}
+			<div class="page-content">
+				{% block search %}
+				<div class="row clearfix">
+           			{% block search_contents %}
+					<div class="grid_12">
+						
+						<div class="wrapbox custom-wrapbox1">
+							<div class="gap clearfix custom-h20" ></div>
+								{% block form_search_start %}
+								 <div class="form_search">
+								    <div class="row collapse">
+								    <div class="small-12 large-10 medium-10 large-centered medium-centered columns">
+
+								    {% block form_search %}
+								    <form method="post">
+									    <div class="row collapse">
+									      <div class="small-12 large-8 medium-8 columns">
+									        <input type="text" value="Search your music" onblur="if (this.value == '') {this.value = 'Search your music';}" onfocus="if (this.value == 'Search your music') {this.value = '';}" name="sld">
+									      </div>
+									      <div class="small-12 large-2 medium-2 columns">
+									      <select name="tld">
+									      <option>Music</option>
+									      <option>Album</option>
+									    </select>
+									     </div>
+									      <div class="small-12 large-2 medium-2 columns">
+									        <input class="btn-wide" type="submit" value="Search" name="submit">
+									      </div>
+										</div>
+									</form>
+									{% endblock %}
+
+									</div>
+									</div>
+								</div>
+								{% endblock %} <!-- form_search_start -->
+								<div class="gap clearfix custom-h20" ></div>
+		
+						</div>
+					
+					</div> 
+					{% endblock %} <!-- block search_contents -->
+				
+				</div>
+				{% endblock %} <!-- block search -->
+
+				{% block album%}
+				<div class="row clearfix">
+					
+					{% block listen_now %}
+					<div class="grid_6">
+						
+						<div class="gap clearfix custom-h50" ></div>
+						
+						<h2 class="custom-h2">LISTEN NOW</h2>
+						
+						<div class="gap clearfix custom-h30" ></div>
+						
+						<iframe width="100%" height="524" scrolling="no" frameborder="no" src="http://localhost:81"></iframe>
+						
+						<div class="gap clearfix custom-h50" ></div>
+					
+					</div> 
+					{% endblock %} <!-- block listen_now -->
+
+					{% block latest_album %}
+
+					<div class="grid_6">
+						
+						<div class="gap clearfix custom-h50" ></div>
+						
+						<h2 class="custom-h2">LATEST ALBUM</h2>
+						
+						<div class="gap clearfix custom-h30" ></div>
+						
+						<div class="grid_12">
+							
+							<div class="grid_2">
+								
+								
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+								
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+							</div> 
+							<div class="grid_2">
+								
+								
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+								
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+							</div>
+							<div class="grid_2">
+								
+								
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+								
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+							</div>
+							<div class="grid_2">
+								
+								
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+								
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+							</div>
+							<div class="grid_2">
+								
+								
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+								
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+							</div>
+							<div class="grid_2">
+								
+								
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+								
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+
+								<div class="tt_single_image tt_content_element tt_align_center">
+									<a href="#" target="_self"><img src="{{media_url}}images/400x400.jpg" alt="Image Alt" /></a>
+								</div> 
+							</div>
+							 
+						</div>
+
+					</div> 
+					{% endblock %} <!-- block latest_album -->
+				
+				</div>
+				{% endblock %}
+
+				{% block tags %}
+				<div class="row clearfix">
+				{% block tags_contents %}
+				<div class="grid_12">
+					<p>
+						AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC AAAAA BBBBB CCCC
+					</p>
+				</div>
+				{% endblock %} <!-- block tag_contents -->
+				</div>
+				{% endblock %} <!-- block tags -->
+  
+			</div><!-- end page-content -->
+   			{% endblock %} <!-- block contents -->
+
+   			{% block footer %}
+			<footer id="footer">
+				<div class="footer-last row mtf clearfix">
+					<span class="copyright">Copyright © 2017 <a href="http://themeforest.net/user/tohidgolkar?ref=tohidgolkar" target="_blank">LICFACE</a>.</span>
+					
+					<div class="menu-footer-menu-container">
+						
+						<ul class="foot-menu">
+							<li class="menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="about-us.html">About Us</a></li>
+							<li class="menu-item"><a href="blog-2.html">Blog</a></li>
+							<li class="menu-item"><a href="shop.html">Shop</a></li>
+							<li class="menu-item"><a href="contact.html">Contact</a></li>
+						</ul>
+					
+					</div> 
+
+				</div><!-- end last footer -->
+
+			</footer><!-- end footer -->
+			{% endblock %} <!-- block footer -->
+		</div><!-- end layout -->
+	
+	</div><!-- end frame -->
+	{% endblock %} <!-- body_contents -->
+
+	{% block back_to_top %}
+	<div id="toTop"><i class="icon-angle-up"></i></div><!-- Back to top -->
+	{% endblock %} <!-- block back_to_top -->
+
+	{% block footer_scripts %}
+	<!-- JavaScripts -->
+	<script type='text/javascript' src='{{static_url}}js/jquery/jquery.js?ver=1.11.0'></script>
+	<script type='text/javascript' src='{{static_url}}js/revslider/jquery.themepunch.revolution.min.js'></script>
+    <script type='text/javascript' src='{{static_url}}js/revslider/jquery.themepunch.tools.min.js'></script>
+	<script type='text/javascript' src='{{static_url}}js/themetor.js?ver=1.0'></script>
+	<script type='text/javascript' src='{{static_url}}js/jquery.flexslider-min.js?ver=2.1'></script>
+	<script type='text/javascript' src='{{static_url}}js/owl.carousel.min.js?ver=2.0.0'></script>               
+	<script type='text/javascript' src='{{static_url}}js/jquery.prettyPhoto.js?ver=3.1.6'></script>
+	<script type='text/javascript' src='{{static_url}}js/tt_composer_front.js?ver=4.3.2'></script>
+	<script type='text/javascript' src='{{static_url}}js/countdown.js?ver=3.9.2'></script>
+	<script type='text/javascript' src='{{static_url}}js/jquery.nicescroll.min.js?ver=3.5.1'></script>
+	<script type='text/javascript' src='{{static_url}}js/custom.js?ver=1.0'></script>
+
+
+
+	<script type="text/javascript">
+
+			/******************************************
+				-	PREPARE PLACEHOLDER FOR SLIDER	-
+			******************************************/
+			
+
+			var setREVStartSize = function() {
+				var	tpopt = new Object();
+					tpopt.startwidth = 1060;
+					tpopt.startheight = 500;
+					tpopt.container = jQuery('#rev_slider_2_1');
+					tpopt.fullScreen = "off";
+					tpopt.forceFullWidth="off";
+
+				tpopt.container.closest(".rev_slider_wrapper").css({height:tpopt.container.height()});tpopt.width=parseInt(tpopt.container.width(),0);tpopt.height=parseInt(tpopt.container.height(),0);tpopt.bw=tpopt.width/tpopt.startwidth;tpopt.bh=tpopt.height/tpopt.startheight;if(tpopt.bh>tpopt.bw)tpopt.bh=tpopt.bw;if(tpopt.bh<tpopt.bw)tpopt.bw=tpopt.bh;if(tpopt.bw<tpopt.bh)tpopt.bh=tpopt.bw;if(tpopt.bh>1){tpopt.bw=1;tpopt.bh=1}if(tpopt.bw>1){tpopt.bw=1;tpopt.bh=1}tpopt.height=Math.round(tpopt.startheight*(tpopt.width/tpopt.startwidth));if(tpopt.height>tpopt.startheight&&tpopt.autoHeight!="on")tpopt.height=tpopt.startheight;if(tpopt.fullScreen=="on"){tpopt.height=tpopt.bw*tpopt.startheight;var cow=tpopt.container.parent().width();var coh=jQuery(window).height();if(tpopt.fullScreenOffsetContainer!=undefined){try{var offcontainers=tpopt.fullScreenOffsetContainer.split(",");jQuery.each(offcontainers,function(e,t){coh=coh-jQuery(t).outerHeight(true);if(coh<tpopt.minFullScreenHeight)coh=tpopt.minFullScreenHeight})}catch(e){}}tpopt.container.parent().height(coh);tpopt.container.height(coh);tpopt.container.closest(".rev_slider_wrapper").height(coh);tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(coh);tpopt.container.css({height:"100%"});tpopt.height=coh;}else{tpopt.container.height(tpopt.height);tpopt.container.closest(".rev_slider_wrapper").height(tpopt.height);tpopt.container.closest(".forcefullwidth_wrapper_tp_banner").find(".tp-fullwidth-forcer").height(tpopt.height);}
+			};
+
+			/* CALL PLACEHOLDER */
+			setREVStartSize();
+
+
+			var tpj=jQuery;
+			tpj.noConflict();
+			var revapi2;
+
+			tpj(document).ready(function() {
+
+			if(tpj('#rev_slider_2_1').revolution == undefined)
+				revslider_showDoubleJqueryError('#rev_slider_2_1');
+			else
+			   revapi2 = tpj('#rev_slider_2_1').show().revolution(
+				{
+					dottedOverlay:"none",
+					delay:9000,
+					startwidth:1060,
+					startheight:500,
+					hideThumbs:200,
+
+					thumbWidth:100,
+					thumbHeight:50,
+					thumbAmount:2,
+
+					navigationType:"bullet",
+					navigationArrows:"solo",
+					navigationStyle:"navbar-old",
+
+					touchenabled:"on",
+					onHoverStop:"on",
+
+					swipe_velocity: 0.7,
+					swipe_min_touches: 1,
+					swipe_max_touches: 1,
+					drag_block_vertical: false,
+					
+					
+					keyboardNavigation:"off",
+
+					navigationHAlign:"center",
+					navigationVAlign:"bottom",
+					navigationHOffset:0,
+					navigationVOffset:20,
+
+					soloArrowLeftHalign:"left",
+					soloArrowLeftValign:"center",
+					soloArrowLeftHOffset:20,
+					soloArrowLeftVOffset:0,
+
+					soloArrowRightHalign:"right",
+					soloArrowRightValign:"center",
+					soloArrowRightHOffset:20,
+					soloArrowRightVOffset:0,
+
+					shadow:0,
+					fullWidth:"on",
+					fullScreen:"off",
+
+					spinner:"spinner3",
+
+					stopLoop:"off",
+					stopAfterLoops:-1,
+					stopAtSlide:-1,
+
+					shuffle:"off",
+
+					autoHeight:"off",
+					forceFullWidth:"off",
+					
+					
+					hideTimerBar:"on",
+					hideThumbsOnMobile:"off",
+					hideNavDelayOnMobile:1500,
+					hideBulletsOnMobile:"off",
+					hideArrowsOnMobile:"off",
+					hideThumbsUnderResolution:0,
+
+											hideSliderAtLimit:0,
+					hideCaptionAtLimit:0,
+					hideAllCaptionAtLilmit:0,
+					startWithSlide:0					});
+
+
+
+				
+			});	/*ready*/
+
+	</script>
+				
+	<script >
+			jQuery(document).ready(function($) {
+				
+				// Countdown Timer /////////////////////////////
+				try {
+					$("#cd_tt1").countdown({
+					date: "30 December 2015 23:59:59",
+					format: "on"
+					});
+				} catch(e){}
+			});	
+	</script>
+	{% endblock %}
+	
+</body>
+{% endblock %}
+
+{% block endhtml %}
+</html>
+{% endblock %}
